@@ -8,7 +8,7 @@ function setCard(obj) {
       <img src="${obj["avatar_url"]}" class="img" alt="demoimg" />
     </div>
     <span class="employname"> <i class="ri-user-2-fill"></i> ${obj["name"]}</span>
-    <a href="${
+    <a target="_blank" href="${
       obj["html_url"]
     }" class="employrole button" title="GitHub Profile"><i class="ri-github-fill"></i> ${obj["login"]}</a>
 
