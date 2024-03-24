@@ -7,12 +7,12 @@ function setCard(obj) {
     <div class="employimage">
       <img src="${obj["avatar_url"]}" class="img" alt="demoimg" />
     </div>
-    <span class="employname">${obj["name"]}</span>
+    <span class="employname"> <i class="ri-user-2-fill"></i> ${obj["name"]}</span>
     <a href="${
       obj["html_url"]
-    }" class="employrole button" title="GitHub Profile">${obj["login"]}</a>
+    }" class="employrole button" title="GitHub Profile"><i class="ri-github-fill"></i> ${obj["login"]}</a>
 
-    <span class="location">location :${obj["location"]}</span>
+    <span class="location"><i class="ri-map-pin-user-line"></i> ${obj["location"]}</span>
   </div>
   <div class="right">
     <p class="reviewpera">
@@ -20,10 +20,10 @@ function setCard(obj) {
       
     </p>
     <div class="leftrightbtn">
-      <span class="pointer button followers" onclick="">Followers : ${
+      <span class="pointer button followers" title="Followers"> <i class="ri-user-received-fill"></i> Followers ${
     obj["followers"]
   }</span>
-      <span class="pointer button following" onclick="">Following : ${
+      <span class="pointer button following" title="Following"> <i class="ri-user-shared-fill"></i> Following ${
     obj["following"]
   }</span>
     </div>
